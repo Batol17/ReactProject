@@ -1,0 +1,36 @@
+.btn-title{
+    color: #7180d4;
+    border: 1px solid #7180d4;
+    background-color: white;
+ 
+    border-radius: 12px;
+}
+
+.btn-title:hover{
+    color: white;
+    border: 1px solid white;
+
+    background-color: #7180d4;
+    cursor: pointer;
+}
+.text-title{
+    font-size: 23px;
+    background: linear-gradient(to right, #a2aef3, #2b51a1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: none;
+    font-weight: bold;
+    position: relative;
+    /* border-bottom: 1px solid #7180d4; */
+    
+}
+.text-title::after {
+    content: ''; /* محتوى الخط السفلي */
+    position: absolute; /* تحديد موضع الخط */
+    left: 0; /* محاذاة إلى اليسار */
+    bottom: 0px; /* المسافة بين النص والخط */
+    height: 2px; /* ارتفاع الخط */
+    width: 100%; /* عرض الخط */
+    background: linear-gradient(to right, #a2aef3, #2b51a1);
+    z-index: -1; /* وضع الخط تحت النص */
+  }

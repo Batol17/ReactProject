@@ -1,0 +1,35 @@
+.card-pro{
+    border-radius: 12px;
+}
+.img-pro{
+    background-color:var(--bg-color);
+    margin: 6px;
+    width: 94%;
+    padding: 15px;
+    height: 15rem;
+
+}
+.icon-card-heart {
+    background-color: white;
+    width: fit-content;
+    margin-top: -18px;
+    border-style: hidden;
+    padding: 7px;
+    border-radius: 50%;
+    color: rgb(141, 141, 141);
+    box-shadow:0 0 12px rgb(15, 106, 180);
+    top: 99px;
+    margin-top: -95px;
+    position: absolute;
+    right: 7px;
+}
+.icon-card-cart {
+    background-color: white;
+    width: fit-content;
+    margin-top: -18px;
+    border-style: hidden;
+    padding: 7px;
+    border-radius: 50%;
+    color: rgb(141, 141, 141);
+    box-shadow:0 0 12px rgb(15, 106, 180);
+}

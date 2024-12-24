@@ -1,0 +1,29 @@
+.cat-card{
+    border-radius: 10px;
+    /* border: 1px solid #d0d0ef; */
+    background-color: white;
+    
+    width: 7rem;
+}
+.img-content{
+    border-radius: 45%;
+    height: 80px;
+    width: 80px;
+    background-color: var(--bg-color);
+
+}
+.img{
+    width: 70px;
+    height:65px;
+    margin-top: 5px;
+    padding: 2px;
+
+}
+.text-card{
+    font-weight: bold;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: large;
+}

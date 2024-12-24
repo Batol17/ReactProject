@@ -1,0 +1,10 @@
+.logo_img{
+    width: 54px;
+    height: 54px
+}
+.bg-nav{
+    border-color: rgba(154, 160, 165, 0.1);
+    /* border-bottom:1px solid #8dc5d5; */
+    box-shadow: gray;
+    height: 60px;
+}

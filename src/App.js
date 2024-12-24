@@ -1,40 +1,30 @@
 // App.js
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from './component/NavBar';
-import Hero404 from './component/Hero404';
-import Products from './component/Products';
-import { Route, Routes } from 'react-router-dom';
-import SliderComponent from './component/SliderComponent';
-import ProductDetails from './component/ProductDetails';
-import Categories from './component/Categories';
-import storeContext from './component/hooks/storeContext';
-import { useEffect, useState } from 'react';
-import Cart from './component/Cart';
-import Login from './component/Login';
+import HomePage from './Pages/Home/HomePage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from './Pages/auth/Login.jsx';
+import NavBar from './component/utility/navbar/NavBar';
+import Footer from './component/utility/footer/Footer';
+import Register from './Pages/auth/Register.jsx';
 
 function App() {
   
-  const [products, setProducts] = useState([]);
+ 
 
   return (
     <div className="App">
-      <storeContext.Provider value={{ products, setProducts }}>
-        <NavBar />
+      <NavBar/>
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={
-            <>
-              <SliderComponent />
-              <Categories />
-              <Products />
-            </>
-          } />
-          <Route path="/*" element={<Hero404 />} />
-          <Route path="/products/:id" element={<ProductDetails />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/login" element={<Login />} />
+              <Route path='login' element={<Login />} />
+              <Route path='register' element={<Register />} />
+              <Route path='/' element={<HomePage />} />
+
+              
         </Routes>
-      </storeContext.Provider>
+      </BrowserRouter>
+      <Footer/>
     </div>
   );
 }

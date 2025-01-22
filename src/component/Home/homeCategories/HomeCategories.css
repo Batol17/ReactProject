@@ -1,0 +1,15 @@
+.card-content{
+    background-color: #a2aef3;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 80px;
+    cursor: pointer;
+}
+.card-text{
+    font-style: italic;
+    color: #2b51a1;
+    font-weight: bold;
+}

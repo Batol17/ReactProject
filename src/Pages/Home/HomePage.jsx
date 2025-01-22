@@ -5,6 +5,7 @@ import { Container, Row } from 'react-bootstrap'
 import CardProductContainer from '../../component/Home/cardProductContainer/CardProductContainer.jsx'
 import DiscountSection from '../../component/Home/discountSection/DiscountSection.jsx'
 import BrandFeatures from '../../component/brand/BrandFeatures.jsx'
+import AllProduct from '../product/AllProduct.jsx'
 const HomePage = () => {
   return (
     <div>
@@ -12,11 +13,13 @@ const HomePage = () => {
         
         <Carousel/>
        <Container>
+         <CardProductContainer title='الاكثر مبيعا' btnTitle='المزيد' path='allProduct' />
          <HomeCategories  />
-         <CardProductContainer title='الاكثر مبيعا' btnTitle='المزيد' />
+
+         <AllProduct/>
          <DiscountSection/>
-         <CardProductContainer  title='احدث التصنيفات' btnTitle='المزيد'/>
-         <BrandFeatures   title='اشهر الماركات '   />
+         {/* <CardProductContainer  title='احدث الازياء' btnTitle='المزيد' path='allProduct'/> */}
+         <BrandFeatures   title='اشهر الماركات ' btnTitle='المزيد' path='allBrand'   />
        </Container>
         </div>
     </div>

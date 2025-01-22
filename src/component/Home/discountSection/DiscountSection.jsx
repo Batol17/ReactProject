@@ -5,7 +5,7 @@ import './DiscountSection.css'
 const DiscountSection = () => {
     return (
         <Container>
-            <Row className="discount-backcolor my-3  mx-2 d-flex text-center align-items-center">
+            <Row className="discount-backcolor my-3  mx-2 d-flex text-center align-items-center ">
                 <Col sm="6">
                     <div className="discount-title">
                         خصم يصل حتي ٣٠٪ علي اجهازه اللاب توب

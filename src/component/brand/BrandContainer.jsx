@@ -1,16 +1,14 @@
-
-import SubTitle from '../utility/subTitle/SubTitle'
+import React from 'react'
 import { Row } from 'react-bootstrap'
-import BrandCard from './BrandCard.jsx'
+import BrandCard from './BrandCard'
 import img1 from '../../img/brand1.png'
 import img2 from '../../img/brand2.png'
 import img3 from '../../img/brand3.png'
 import img4 from '../../img/brand1.png'
-const BrandFeatures = ({title,btnTitle,path}) => {
+const BrandContainer = () => {
   return (
-    <>
-        <SubTitle title={title} btnTitle={btnTitle} path={path} />
-        <Row className='d-flex justify-content-center  gap-1'>
+    <div>
+          <Row className='d-flex justify-content-center gap-1'>
             <BrandCard image={img1}/>
             <BrandCard image={img2}/>
             <BrandCard image={img3}/>
@@ -18,8 +16,8 @@ const BrandFeatures = ({title,btnTitle,path}) => {
             <BrandCard image={img1}/>
             <BrandCard image={img4}/>
          </Row>
-    </>
+    </div>
   )
 }
 
-export default BrandFeatures
+export default BrandContainer

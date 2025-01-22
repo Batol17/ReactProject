@@ -1,30 +1,34 @@
-// App.js
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import HomePage from './Pages/Home/HomePage';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import HomePage from './pages/Home/HomePage.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Login from './Pages/auth/Login.jsx';
-import NavBar from './component/utility/navbar/NavBar';
-import Footer from './component/utility/footer/Footer';
-import Register from './Pages/auth/Register.jsx';
+import Login from './pages/auth/Login.jsx';
+import NavBar from './component/utility/navbar/NavBar.jsx';
+import Footer from './component/utility/footer/Footer.jsx';
+import Register from './pages/auth/Register.jsx';
+import AllProduct from './pages/product/AllProduct.jsx';
+import AllBrand from './pages/brand/AllBrand.jsx';
+import Slider from 'react-slick';
+
 
 function App() {
   
- 
-
   return (
     <div className="App">
       <NavBar/>
       <BrowserRouter>
-        <Routes>
-              <Route path='login' element={<Login />} />
-              <Route path='register' element={<Register />} />
-              <Route path='/' element={<HomePage />} />
-
-              
-        </Routes>
+          <Routes>
+                <Route path='/' element={<HomePage />} />
+                <Route path='login' element={<Login />} />
+                <Route path='register' element={<Register />} />
+                <Route path='allBrand' element={<AllBrand />} />
+                <Route path='allProduct' element={<AllProduct />} />            
+          </Routes>
       </BrowserRouter>
-      <Footer/>
+       <Footer/>
     </div>
   );
 }
